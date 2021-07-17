@@ -26,6 +26,7 @@ export default {
     background-color: aqua;
     display: flex; 
     margin-bottom: 15px; 
+    padding-left: 23px; 
 }
 
 header {
@@ -43,11 +44,12 @@ li {
 
 a {
     text-decoration: none;
-    padding: 5px; 
+    padding: 10px; 
 }
 
 a:hover {
     background-color: teal;
+    border-radius: 5px; 
 }
 
 </style>
