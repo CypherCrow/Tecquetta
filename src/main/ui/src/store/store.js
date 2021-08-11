@@ -37,6 +37,22 @@ const store = createStore({
                     }
                 ]
             }
+        ], 
+
+        transactions: [
+            {
+                id: 1,
+                title: 'Medical Delivery', 
+                sender: 'Marcus Aurelius', 
+                receiver: 'Elliot Alderson'
+            }, 
+
+            {
+                id: 2,
+                title: 'Camp Oversight',
+                sender: 'Nazz von Bartonschmeer',
+                receiver: 'Frodo Baggins'
+            }
         ]
     },
     mutations: {

@@ -7,6 +7,7 @@
                 <li><router-link to="/">Home</router-link></li>
                 <li>Documents</li>
                 <li>Signatures List</li>
+                <li><router-link to="/map-view">Map View</router-link></li>
             </nav>
         </div>
     </div> 
