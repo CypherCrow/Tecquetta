@@ -1,5 +1,5 @@
 <template>
-    <div class="Button">
+    <div class="Button" :style="{ fontSize: textSize + 'px' }">
         <button>{{ buttonName }}</button> 
     </div>
 </template>
@@ -11,6 +11,10 @@ export default {
         buttonName: {
             type: String, 
             default: 'Tecquetta Button'
+        },
+        textSize: {
+            type: Number,
+            default: 50
         }
     }
 }

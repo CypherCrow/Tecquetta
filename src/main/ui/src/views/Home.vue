@@ -4,7 +4,7 @@
 
         <div class="WelcomingSection">
             <p>Welcome to Tecquetta!</p>
-            <p>This application is developed for +Map International, using DocuSign API.</p>
+            <p>This application is developed for +Map International, using the DocuSign API.</p>
         </div> 
 
         <div class="OptionCardsSection" v-for="option in $store.state.options" :key="option.id">
@@ -37,12 +37,14 @@ export default {
 
 .TecquettaHome {
     text-align: center;
+    background-image: url("../assets/blogspot-image.jpg"); 
 }
 
 .WelcomingSection {
     font-weight: bold; 
     font-size: 1.25em; 
     margin: 45px 0; 
+    color: white; 
 }
 
 .OptionCardsSection {

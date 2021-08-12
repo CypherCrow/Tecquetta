@@ -3,7 +3,9 @@
         <h1>{{ optionTitle }}</h1>
         <h2>{{ optionSubtitle }}</h2>
 
-        <Button buttonName="Proceed"/>
+        <div class="ButtonSection">
+            <Button buttonName="Proceed"/>
+        </div>
     </div>
 </template>
 
@@ -37,15 +39,21 @@ export default {
     max-width: 400px;
     height: 250px;
     max-height: 250px; 
-    margin: 5px;
+    margin: 15px 20px;
+    background: white; 
 }
  
 h1 {
-    font-size: 30px;
+    margin-top: 30px; 
+    font-size: 25px;
 }
 
 h2 {
-    font-size: 20px; 
+    font-size: 16px; 
+}
+
+.ButtonSection {
+    margin: 25px; 
 }
 
 </style>
