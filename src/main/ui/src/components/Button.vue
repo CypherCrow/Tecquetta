@@ -27,7 +27,9 @@ button {
 }
 
 button:hover {
-    background: teal;
+    background: rgb(2, 171, 184);
+    color: white; 
+    font-weight: bold;
 }
 
 </style>

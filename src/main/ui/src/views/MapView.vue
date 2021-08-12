@@ -40,15 +40,15 @@ export default {
 }
 
 .MapAndListSection {
-    text-align: center;
+    display: inline-block; 
 }
 
 .MapSection {
-    float: center; 
+    float: left; 
 }
 
 .MedicalDeliveryStatusSection {
-    float: center; 
+    float: left; 
 }
 
 </style> 

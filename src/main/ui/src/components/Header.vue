@@ -1,6 +1,6 @@
 <template>
     <div class="Header">
-        <header>Tecquetta</header>
+        <header><strong>Tecquetta</strong></header>
 
         <div class="HeaderLinks"> 
             <nav> 
@@ -26,8 +26,10 @@ export default {
 .Header {
     background-color: aqua;
     display: flex; 
-    margin-bottom: 15px; 
-    padding-left: 23px; 
+    height: 50px;
+    max-height: 50px;
+    margin-bottom: 20px;  
+    padding: 10px 23px;
 }
 
 header {
@@ -49,7 +51,9 @@ a {
 }
 
 a:hover {
-    background-color: teal;
+    background: rgb(2, 171, 184);
+    color: white; 
+    font-weight: bold; 
     border-radius: 5px; 
 }
 

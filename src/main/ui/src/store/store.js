@@ -10,34 +10,18 @@ const store = createStore({
             }
         ], 
 
-        envelopes: [
-            {
-                id: 1, 
-                envelopeName: 'TecquettaEnvelope1', 
-                envelopeType: 'carbon',
-                documentId: 1 
-            }
-        ], 
-
-        rooms: [
+        options: [
             {
                 id: 1,
-                roomName: 'TecquettaRoom1',
-                owners: [
-                    {
-                        accountId: '1001'
-                    },
-
-                    {
-                        accountId: '1002'
-                    },
-
-                    {
-                        accountId: '1003'
-                    }
-                ]
+                title: "Medical Supplies Acquisition",
+                subtitle: "For ordering medical supplies"
+            }, 
+            {
+                id: 2, 
+                title: "Surgical Supplies Acquisition",
+                subtitle: "For ordering surgical supplies"
             }
-        ], 
+        ],
 
         transactions: [
             {
