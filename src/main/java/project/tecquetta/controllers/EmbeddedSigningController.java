@@ -5,7 +5,6 @@ import project.tecquetta.configuration.WorkArguments;
 import project.tecquetta.core.models.Session;
 import project.tecquetta.core.models.User;
 
-import com.docusign.controller.eSignature.examples.AbstractEsignatureController;
 import com.docusign.esign.api.EnvelopesApi;
 import com.docusign.esign.client.ApiClient;
 import com.docusign.esign.client.ApiException;
@@ -37,7 +36,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 @RequestMapping("/eg001")
-public class EmbeddedSigningController extends AbstractEsignatureController {
+public class EmbeddedSigningController /* extends AbstractEsignatureController */ {
 
     private static final String DOCUMENT_FILE_NAME = "World_Wide_Corp_lorem.pdf";
     private static final String DOCUMENT_NAME = "Lorem Ipsum";
