@@ -13,6 +13,7 @@
     </parent>
 
     <properties>
+        <java.version>15.0.2</java.version>
         <oauth2.version>2.5.2</oauth2.version>
         <node.version>14.15.5</node.version>
         <npm.version>7.20.5</npm.version>
