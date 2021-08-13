@@ -25,6 +25,8 @@ You should have Java and Node.js installed.
 - Clone the git repo to anywhere on your computer.
 - Run this command on the terminal: 
   `mvn spring-boot:run`
+- In case the entire project is malfunctioning, head to `src/main/ui` and input this command to give you can idea of how this application works: 
+  `npm run serve`
 
 ## Sources
 
