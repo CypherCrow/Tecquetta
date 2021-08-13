@@ -20,12 +20,14 @@
         </div>
         <hr/>
         <h2>Forms</h2>
-        <div class="SurgicalSuppliesDocuments" v-for="document in $store.state.surgicalSupplyDocuments" :key="document.id"> 
-            <FormCard 
-                :name="document.name"
-                :description="document.description"
-                />
+        <div class="SurgicalSuppliesDocsBackground">
+            <div class="SurgicalSuppliesDocuments" v-for="document in $store.state.surgicalSupplyDocuments" :key="document.id"> 
+                <FormCard 
+                    :name="document.name"
+                    :description="document.description"
+                    />
 
+            </div>
         </div>
     </div>
 </template>
@@ -47,9 +49,13 @@ export default {
 
 .SurgicalSuppliesDocuments {
     display: inline-block;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.SurgicalSuppliesDocsBackground {
     background: lightgray; 
     width: 100%;
-    justify-content: center;
 }
 
 </style>

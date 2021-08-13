@@ -15,7 +15,7 @@
                 />
         </div>
 
-        <div id="#contents">
+        <div class="SpringBootGreeting">
             <strong>A greeting:</strong><br/>
             <strong>{{ msg }}</strong>
         </div> 
@@ -70,8 +70,9 @@ export default {
     align-items: center; 
 }
 
-#contents {
-    color: white; 
+.SpringBootGreeting {
+    margin-top: 300px;
+    color: white;  
 }
 
 </style>

@@ -20,10 +20,12 @@
         </div>
         <hr/>
         <h2>Forms</h2>
-        <div class="MedicalSuppliesDocuments" v-for="document in $store.state.medicalSupplyDocuments" :key="document.id"> 
-            <FormCard 
-                :name="document.name"
-                :description="document.description" />
+        <div class="MedicalSuppliesFormsBackground">
+            <div class="MedicalSuppliesDocuments" v-for="document in $store.state.medicalSupplyDocuments" :key="document.id"> 
+                <FormCard 
+                    :name="document.name"
+                    :description="document.description" />
+            </div>
         </div>
     </div>
 </template>
@@ -43,11 +45,15 @@ export default {
 
 <style scoped>
 
+.MedicalSuppliesFormsBackground{
+    background: lightgrey; 
+    width: 100%; 
+}
+
 .MedicalSuppliesDocuments {
     display: inline-block;
-    background: lightgray; 
-    width: 100%;
-    text-align: center;
+    justify-content: center; 
+    margin-top: 10px; 
 }
 
 </style>
