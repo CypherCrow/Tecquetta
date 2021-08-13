@@ -1,4 +1,4 @@
-# tecquetta-ui
+# Tecquetta UI - Commands for Reference
 
 ## Project setup
 ```
