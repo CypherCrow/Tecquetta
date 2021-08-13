@@ -11,6 +11,7 @@ A web application for e-signatures and document storage using the DocuSign API, 
 - Uploading/deleting/editing documents  
 - Images of forms to be displayed on the form cards
 - Authorization Code Grant feature to be officially implemented
+- Add a category/room of forms when necessary
 
 ## Installation
 
