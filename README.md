@@ -10,6 +10,7 @@ A web application for e-signatures and document storage using the DocuSign API, 
 - A dedicated service for businesses to create their own Tecquetta site, like how WordPress provides its users to create their own websites
 - Uploading/deleting/editing documents  
 - Images of forms to be displayed on the form cards
+- Authorization Code Grant feature to be officially implemented
 
 ## Installation
 
