@@ -4,11 +4,15 @@
 
         <div class="WelcomingSection">
             <p>Welcome to Tecquetta!</p>
-            <p>This application is developed for +Map International, using the DocuSign API.</p>
+            <p>This application is developed for MAP International using the DocuSign API.</p>
         </div> 
 
         <div class="OptionCardsSection" v-for="option in $store.state.options" :key="option.id">
-            <OptionCard :optionTitle="option.title" :optionSubtitle="option.subtitle" />
+            <OptionCard 
+                :optionTitle="option.title" 
+                :optionSubtitle="option.subtitle"
+                :redirectRoute="option.redirectRoute" 
+                />
         </div>
 
         <div id="#contents">
@@ -63,6 +67,7 @@ export default {
 
 .OptionCardsSection {
     display: inline-block; 
+    align-items: center; 
 }
 
 #contents {

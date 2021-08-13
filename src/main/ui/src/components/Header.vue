@@ -6,8 +6,8 @@
             <nav> 
                 <li><router-link to="/">Home</router-link></li>
                 <li><router-link to="/create-doc">Create Document</router-link></li>
-                <li><router-link to="/sigs-list">Signatures List</router-link></li>
-                <li><router-link to="/sig-txns">Signature Transcactions</router-link></li>
+                <li><router-link to="/sig-txns">Signature Transactions</router-link></li>
+                <li><router-link to="/create-site">Create Website</router-link></li>
             </nav>
         </div>
     </div> 
@@ -55,6 +55,7 @@ a:hover {
     text-decoration: none;
     background: rgb(2, 171, 184);
     color: white; 
+    font-weight: bold; 
     border-radius: 5px; 
 }
 

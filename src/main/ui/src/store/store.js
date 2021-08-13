@@ -2,24 +2,42 @@ import { createStore } from 'vuex'
 
 const store = createStore({
     state: {
-        documents: [
+        medicalSupplyDocuments: [
             {
                 id: 1, 
-                documentName: 'TecquettaDocument1',
-                documentType: 'pdf'
+                name: 'Medical Supplies - Pediatric Antibiotics Form',
+                type: 'pdf',
+                description: "A form for obtaining medical supplies for MAP International's Pediatric Antibiotics Program."
+            },
+            {
+                id: 2,
+                name: 'Medical Supplies - Mental Health Form',
+                type: 'pdf',
+                description: "A form for obtaining medical supplies for MAP International's Mental Health Program."
             }
         ], 
+
+        surgicalSupplyDocuments: [
+            {
+                id: 1, 
+                name: 'Surgical Supplies - Neglected Tropical Diseases Form',
+                type: 'pdf',
+                description: "A form for obtaining medical supplies for MAP International's Neglected Tropical Diseases Program"
+            }
+        ],
 
         options: [
             {
                 id: 1,
                 title: "Medical Supplies Acquisition",
-                subtitle: "For obtaining medical supplies"
+                subtitle: "For obtaining medical supplies",
+                redirectRoute: '/med-supplies'
             }, 
             {
                 id: 2, 
                 title: "Surgical Supplies Acquisition",
-                subtitle: "For obtaining surgical supplies"
+                subtitle: "For obtaining surgical supplies",
+                redirectRoute: '/surg-supplies'
             }
         ],
 

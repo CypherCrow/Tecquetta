@@ -35,7 +35,7 @@ import javax.servlet.http.HttpServletResponse;
  * for the signer: the DocuSign signing is initiated from your site.
  */
 @Controller
-@RequestMapping("/eg001")
+@RequestMapping("/api/embed-sign")
 public class EmbeddedSigningController extends AbstractEsignatureController  {
 
     private static final String DOCUMENT_FILE_NAME = "World_Wide_Corp_lorem.pdf";
@@ -50,7 +50,7 @@ public class EmbeddedSigningController extends AbstractEsignatureController  {
 
     @Autowired
     public EmbeddedSigningController(DSConfiguration config, Session session, User user) {
-        super(config, "eg001", "Use embedded signing");
+        super(config, "/api/embed-sign", "Use embedded signing");
         this.session = session;
         this.user = user;
     }

@@ -4,14 +4,14 @@
         <h2>{{ optionSubtitle }}</h2>
 
         <div class="ButtonSection">
-            <Button buttonName="Proceed" />
-            <!-- @click="" -->
+            <!-- <Button buttonName="Proceed" @click="gotoLink(optionLink)" /> -->
+            <button type="submit" @click="gotoLink(redirectRoute)">Proceed</button>
         </div>
     </div>
 </template>
 
 <script>
-import Button from './Button'
+//import Button from './Button'
 
 export default {
     name: 'OptionCard',
@@ -24,13 +24,18 @@ export default {
             type: String, 
             default: "Short description of option here"
         }, 
-        optionLink: {
+        redirectRoute: {
             type: String,
             default: "/"
         }
     },
-    components: {
+    /* components: {
         Button
+    }, */
+    methods: {
+        gotoLink(route) {
+            this.$router.push(route);
+        }
     }
 }
 </script>

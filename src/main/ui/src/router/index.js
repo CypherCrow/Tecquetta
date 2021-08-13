@@ -1,10 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '@/views/Home'
-import SignaturesList from '@/views/SignaturesList'
 import SignatureTransactions from '@/views/SignatureTransactions'
-import OptionPage from '@/views/OptionPage'
+import MedicalSupplies from '@/views/MedicalSupplies'
+import SurgicalSupplies from '@/views/SurgicalSupplies'
 import CreateDocument from '@/views/CreateDocument'
+import CreateSite from '@/views/CreateSite'
 
 const routes = [
     {
@@ -13,14 +14,14 @@ const routes = [
         component: Home
     }, 
     {
-        path: '/medical-supplies',
+        path: '/med-supplies',
         name: "MedicalSupplies",
-        component: OptionPage
+        component: MedicalSupplies
     },
     {
-        path: '/surgical-supplies', 
+        path: '/surg-supplies', 
         name: "SurgicalSupplies", 
-        component: OptionPage
+        component: SurgicalSupplies
     },
     {
         path: '/create-doc',
@@ -28,14 +29,14 @@ const routes = [
         component: CreateDocument
     },
     {
-        path: '/sigs-list',
-        name: "SignaturesList",
-        component: SignaturesList
-    },
-    {
         path: '/sig-txns',
         name: "SignatureTransactions", 
         component: SignatureTransactions
+    },
+    {
+        path: '/create-site',
+        name: "CreateSite",
+        component: CreateSite
     }
 ]
 

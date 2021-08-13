@@ -4,11 +4,13 @@
         <Header />
 
         <div class="CreateDocumentHeader"> 
-            <strong>This is where you can create a document for signing.</strong>
+            <h1><strong>This is where you can create a document and publish it.</strong></h1>
+            <p>Just in case an image doesn't show up, imagine a sheet of paper, with PDF editor controls from Adobe PDF.</p>
+            <p>Of course, for this application, these controls will have their own style in the future.</p>
         </div>
 
         <div class="CreateDocumentSection"> 
-            <p><img :src="require('./assets/GenericForm-AdobePDF.PNG')"></p>
+            <p><img src="/assets/GenericForm-AdobePDF.PNG"></p>
         </div>
     </div>
 </template> 
