@@ -3,8 +3,8 @@
         <div class="List" v-for="transaction in $store.state.transactions" :key="transaction.id">
             <TransactionCard 
                 :title=transaction.title
-                :sender=transaction.sender
-                :receiver=transaction.receiver
+                :recipient=transaction.recipient
+                :date=transaction.date
                 />
         </div>
     </div>

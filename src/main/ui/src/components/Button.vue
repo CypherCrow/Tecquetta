@@ -1,6 +1,6 @@
 <template>
     <div class="Button" :style="{ fontSize: textSize + 'px' }">
-        <button>{{ buttonName }}</button> 
+        <button type="submit">{{ buttonName }}</button> 
     </div>
 </template>
 
@@ -16,6 +16,9 @@ export default {
             type: Number,
             default: 50
         }
+    },
+    methods: {
+
     }
 }
 </script>

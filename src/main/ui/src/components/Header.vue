@@ -5,9 +5,9 @@
         <div class="HeaderLinks"> 
             <nav> 
                 <li><router-link to="/">Home</router-link></li>
-                <li>Documents</li>
-                <li>Signatures List</li>
-                <li><router-link to="/map-view">Map View</router-link></li>
+                <li><router-link to="/create-doc">Create Document</router-link></li>
+                <li><router-link to="/sigs-list">Signatures List</router-link></li>
+                <li><router-link to="/sig-txns">Signature Transcactions</router-link></li>
             </nav>
         </div>
     </div> 
@@ -45,15 +45,16 @@ li {
     margin: 10px 5px; 
 } 
 
-a {
+a, a:visited, a:active {
+    color: inherit; 
     text-decoration: none;
     padding: 10px; 
 }
 
 a:hover {
+    text-decoration: none;
     background: rgb(2, 171, 184);
     color: white; 
-    font-weight: bold; 
     border-radius: 5px; 
 }
 

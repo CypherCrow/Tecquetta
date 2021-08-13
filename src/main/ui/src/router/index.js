@@ -1,7 +1,10 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '@/views/Home'
-import MapView from '@/views/MapView'
+import SignaturesList from '@/views/SignaturesList'
+import SignatureTransactions from '@/views/SignatureTransactions'
+import OptionPage from '@/views/OptionPage'
+import CreateDocument from '@/views/CreateDocument'
 
 const routes = [
     {
@@ -10,9 +13,29 @@ const routes = [
         component: Home
     }, 
     {
-        path: '/map-view',
-        name: "MapView", 
-        component: MapView
+        path: '/medical-supplies',
+        name: "MedicalSupplies",
+        component: OptionPage
+    },
+    {
+        path: '/surgical-supplies', 
+        name: "SurgicalSupplies", 
+        component: OptionPage
+    },
+    {
+        path: '/create-doc',
+        name: "CreateDocument",
+        component: CreateDocument
+    },
+    {
+        path: '/sigs-list',
+        name: "SignaturesList",
+        component: SignaturesList
+    },
+    {
+        path: '/sig-txns',
+        name: "SignatureTransactions", 
+        component: SignatureTransactions
     }
 ]
 

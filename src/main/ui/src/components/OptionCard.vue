@@ -4,7 +4,8 @@
         <h2>{{ optionSubtitle }}</h2>
 
         <div class="ButtonSection">
-            <Button buttonName="Proceed"/>
+            <Button buttonName="Proceed" />
+            <!-- @click="" -->
         </div>
     </div>
 </template>
@@ -22,6 +23,10 @@ export default {
         optionSubtitle: {
             type: String, 
             default: "Short description of option here"
+        }, 
+        optionLink: {
+            type: String,
+            default: "/"
         }
     },
     components: {
@@ -41,6 +46,7 @@ export default {
     max-height: 250px; 
     margin: 15px 20px;
     background: white; 
+    align-items: center;
 }
  
 h1 {

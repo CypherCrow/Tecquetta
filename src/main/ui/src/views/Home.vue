@@ -12,8 +12,8 @@
         </div>
 
         <div id="#contents">
-            <strong>Name of Event:</strong>
-            <span th:text="${eventName}"></span>
+            <strong>A greeting:</strong><br/>
+            <strong>{{ msg }}</strong>
         </div> 
 
     </div> 
@@ -28,6 +28,18 @@ export default {
     name: 'Home',
     components: {
         Header, OptionCard
+    },
+    data() {
+        return {
+            msg: ''
+        }
+    },
+    mounted() {
+        fetch("/hello")
+            .then((response) => response.text())
+            .then((data) => {
+                this.msg = data; 
+            })
     }
 }
 
@@ -38,6 +50,8 @@ export default {
 .TecquettaHome {
     text-align: center;
     background-image: url("../assets/blogspot-image.jpg"); 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .WelcomingSection {
@@ -49,6 +63,10 @@ export default {
 
 .OptionCardsSection {
     display: inline-block; 
+}
+
+#contents {
+    color: white; 
 }
 
 </style>

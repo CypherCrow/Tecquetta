@@ -14,28 +14,28 @@ const store = createStore({
             {
                 id: 1,
                 title: "Medical Supplies Acquisition",
-                subtitle: "For ordering medical supplies"
+                subtitle: "For obtaining medical supplies"
             }, 
             {
                 id: 2, 
                 title: "Surgical Supplies Acquisition",
-                subtitle: "For ordering surgical supplies"
+                subtitle: "For obtaining surgical supplies"
             }
         ],
 
         transactions: [
             {
                 id: 1,
-                title: 'Medical Delivery', 
-                sender: 'Marcus Aurelius', 
-                receiver: 'Elliot Alderson'
+                title: 'Medical Supplies', 
+                recipient: 'Elliot Alderson',
+                date: "8/12/2021"
             }, 
 
             {
                 id: 2,
-                title: 'Camp Oversight',
-                sender: 'Nazz von Bartonschmeer',
-                receiver: 'Frodo Baggins'
+                title: 'Surgical Supplies',
+                recipient: 'Nazz von Bartonschmeer',
+                date: "8/10/2021"
             }
         ]
     },

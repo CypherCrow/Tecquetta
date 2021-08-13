@@ -1,15 +1,11 @@
 <template> 
-    <div class="MapView">
+    <div class="Transactions">
         <Header /> 
 
-        <div class="MapAndListSection">
-            <div id="section" class="MapSection"> 
-                <header>Map</header>
-                <p>Map Goes Here</p>
-            </div>
+        <div class="ListSection">
 
             <div id="section" class="MedicalDeliveryStatusSection"> 
-                <header>Delivery Status</header>
+                <header>Signature Transactions</header>
                 <TransactionList /> 
             </div> 
         </div>
@@ -39,16 +35,13 @@ export default {
     text-align: center; 
 }
 
-.MapAndListSection {
+.ListSection {
     display: inline-block; 
 }
 
-.MapSection {
-    float: left; 
-}
-
-.MedicalDeliveryStatusSection {
-    float: left; 
+header {
+    margin: 10px 0;
+    font-weight: bold; 
 }
 
 </style> 
