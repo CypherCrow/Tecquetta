@@ -16,4 +16,12 @@ public class User {
 
     private String name; 
     private String accessToken; 
+
+    public String getName(){
+        return name; 
+    }
+
+    public String getAccessToken(){
+        return accessToken; 
+    }
 }

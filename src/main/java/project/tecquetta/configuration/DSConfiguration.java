@@ -65,4 +65,12 @@ public class DSConfiguration {
     public String getApiName(){
         return apiName; 
     }
+
+    public String getExampleUrl(){
+        return exampleUrl; 
+    }
+
+    public String getDocumentationPath(){
+        return documentationPath; 
+    }
 }

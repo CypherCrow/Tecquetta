@@ -2,7 +2,7 @@
     <div class="SignaturesList">
         <Header />
 
-        <header>A repository for your signatures</header>
+        <header>A repository for your signatures.</header>
     </div> 
 </template>
 
@@ -18,5 +18,9 @@ export default {
 </script>
 
 <style scoped>
+
+header {
+    font-weight: bold; 
+}
 
 </style>

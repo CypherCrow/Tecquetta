@@ -1,5 +1,5 @@
 <template> 
-    <div class="Transactions">
+    <div class="SignatureTransactions">
         <Header /> 
 
         <div class="ListSection">
@@ -17,7 +17,7 @@ import Header from '@/components/Header'
 import TransactionList from '@/components/TransactionList'
 
 export default {
-    name: 'MapView',
+    name: 'SignatureTransactions',
     components: {
         Header, TransactionList
     }

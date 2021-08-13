@@ -36,7 +36,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 @Controller
 @RequestMapping("/eg001")
-public class EmbeddedSigningController /* extends AbstractEsignatureController */ {
+public class EmbeddedSigningController extends AbstractEsignatureController  {
 
     private static final String DOCUMENT_FILE_NAME = "World_Wide_Corp_lorem.pdf";
     private static final String DOCUMENT_NAME = "Lorem Ipsum";

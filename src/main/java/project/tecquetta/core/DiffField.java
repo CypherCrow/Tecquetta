@@ -20,7 +20,11 @@ public class DiffField {
     private String leftValue;
     private String rightValue;
 
-   
+    private DiffField(String name, String leftValue, String rightValue){
+        this.name = name; 
+        this.leftValue = leftValue;
+        this.rightValue = rightValue;
+    }
 
 	/**
      * Creates an instance of the DiffField by a {@link Field} and two objects.

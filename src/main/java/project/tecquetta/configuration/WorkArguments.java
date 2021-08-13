@@ -55,5 +55,13 @@ public class WorkArguments {
     private String ccPhoneNumber;
     private String countryCode;
     private String ccCountryCode;
+
+    public String getSignerName(){
+        return signerName; 
+    }
+
+    public String getSignerEmail(){
+        return signerEmail; 
+    }
 }
 

@@ -32,4 +32,25 @@ public class Session {
     private String clickwrapId; 
     private String clickwrapVersionNumber; 
 
+    public String getAccountId(){
+        return this.accountId;
+    }
+
+    public String getBasePath(){
+        return this.basePath;
+    }
+
+    public String getEnvelopeId(){
+        return this.envelopeId;
+    }
+
+    public void setEnvelopeId(String envelopeId){
+        this.envelopeId = envelopeId;
+    }
+
+
+    public void setRefreshToken(boolean tokenExpired) {
+        if(tokenExpired)
+            this.refreshToken = true; 
+    }
 }
