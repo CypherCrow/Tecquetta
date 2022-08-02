@@ -82,7 +82,7 @@ public final class EnvelopeHelpers {
      * @throws IOException in case of template parsing error
      */
     static byte[] createHtmlFromTemplate(Template template, String objectName, Object value) throws IOException {
-        Map<String, Object> input = new HashMap<>();
+        Map<String, Object> input = new HashMap<String, Object>();
         input.put(objectName, value);
         StringWriter stringWriter = new StringWriter();
         try {

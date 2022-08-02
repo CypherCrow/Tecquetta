@@ -16,7 +16,7 @@ import com.docusign.esign.model.Recipients;
 import com.docusign.esign.model.Signer;
 import com.docusign.esign.model.ViewUrl;
 
-import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -47,8 +47,6 @@ public class EmbeddedSigningController extends AbstractEsignatureController  {
     private final Session session;
     private final User user;
 
-
-    @Autowired
     public EmbeddedSigningController(DSConfiguration config, Session session, User user) {
         super(config, "/api/embed-sign", "Use embedded signing");
         this.session = session;
@@ -118,7 +116,7 @@ public class EmbeddedSigningController extends AbstractEsignatureController  {
         return viewRequest;
     }
 
-    private static EnvelopeDefinition makeEnvelope(String signerEmail, String signerName) throws IOException {
+    private EnvelopeDefinition makeEnvelope(String signerEmail, String signerName) throws IOException {
         // Create a signer recipient to sign the document, identified by name and email
         // We set the clientUserId to enable embedded signing for the recipient
         Signer signer = new Signer();

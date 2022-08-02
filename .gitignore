@@ -43,3 +43,12 @@ src/main/resources/application.json
 
 # according to gitignore.io this shouldnt be shared
 .factorypath
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
