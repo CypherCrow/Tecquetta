@@ -17,7 +17,7 @@
         <oauth2.version>2.5.2</oauth2.version>
         <node.version>14.15.5</node.version>
         <npm.version>7.20.5</npm.version>
-        <docusign.version>3.14.0</docusign.version>
+        <docusign.version>3.18.0</docusign.version>
         <rooms.version>1.1.0-RC1</rooms.version>
         <commonsio.version>2.11.0</commonsio.version>
         <click.version>1.0.0</click.version>
@@ -79,6 +79,17 @@
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
             <version>${commonsio.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
         </dependency>
     </dependencies> 
 

@@ -26,7 +26,7 @@
 <script>
 import Header from '@/components/Header'
 import OptionCard from '@/components/OptionCard'
-
+import axios from 'axios'; 
 
 export default {
     name: 'Home',
@@ -39,11 +39,9 @@ export default {
         }
     },
     mounted() {
-        fetch("/api/messages/hello")
-            .then((response) => response.text())
-            .then((data) => {
-                this.msg = data; 
-            })
+        axios.get('http://localhost:8080/api/messages/hello')
+            .then(response => this.msg = response.data)
+            .catch(error => this.msg = error)
     }
 }
 
