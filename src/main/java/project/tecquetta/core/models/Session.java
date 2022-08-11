@@ -1,6 +1,7 @@
 package project.tecquetta.core.models;
 
 import java.util.List;
+import java.util.UUID;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
@@ -31,6 +32,10 @@ public class Session {
     private boolean refreshToken = false; 
     private String clickwrapId; 
     private String clickwrapVersionNumber; 
+    private String exportId;
+    private String importId;
+    private UUID orgId;
+    public UUID bulkListId;
 
     public String getAccountId(){
         return this.accountId;

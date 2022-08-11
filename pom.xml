@@ -13,13 +13,14 @@
     </parent>
 
     <properties>
-        <java.version>15.0.2</java.version>
+        <java.version>18</java.version>
         <oauth2.version>2.5.2</oauth2.version>
         <node.version>14.15.5</node.version>
         <npm.version>7.20.5</npm.version>
         <docusign.version>3.14.0</docusign.version>
         <rooms.version>1.1.0-RC1</rooms.version>
         <commonsio.version>2.11.0</commonsio.version>
+        <click.version>1.0.0</click.version>
     </properties>
 
     <dependencies>
@@ -33,6 +34,12 @@
             <groupId>com.docusign</groupId>
             <artifactId>docusign-rooms-java</artifactId>
             <version>${rooms.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.docusign</groupId>
+            <artifactId>docusign-click-java</artifactId>
+            <version>${click.version}</version>
         </dependency>
 
         <dependency>
@@ -86,6 +93,15 @@
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.0</version>
+                <configuration>
+                    <release>18</release>
+                </configuration>
+            </plugin>
+
+            <plugin>
                 <artifactId>exec-maven-plugin</artifactId>
                 <groupId>org.codehaus.mojo</groupId>
                 <executions>
@@ -110,6 +126,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-resources-plugin</artifactId>
+                <configuration>
+                    <release>18</release>
+                    <encoding>utf8</encoding>
+                </configuration>
                 <executions>
                     <execution>
                         <id>Copy Vue frontend into Spring Boot target static folder</id>
